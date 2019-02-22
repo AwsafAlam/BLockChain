@@ -111,3 +111,60 @@ What would you like to do? (default = stats)
  4. Deploy network components
 >
 ```
+
+## Understanding an Ethereum Node
+
+The config in the json structure describes the properties of a chain. TImestamp indicates the level of difficulty to be imposed by the consensus algorithm, also indicates the order of a block.
+
+Difficulty is the computational complexity provided by the consensus algo.
+
+creating more private nodes :
+
+`geth --datadir . init awsaf.json`
+
+`datadir` is the target dir where the private node data is saved. After execution :
+
+```bash
+INFO [02-23|04:24:30.515] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [02-23|04:24:30.517] Allocated cache and file handles         database=/home/awsaf/Desktop/BLockChain/Geth/private/geth/chaindata cache=16 handles=16
+INFO [02-23|04:24:30.680] Writing custom genesis block 
+INFO [02-23|04:24:30.700] Persisted trie from memory database      nodes=354 size=51.71kB time=5.355239ms gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [02-23|04:24:30.700] Successfully wrote genesis state         database=chaindata                                                  hash=d51396…c81590
+INFO [02-23|04:24:30.700] Allocated cache and file handles         database=/home/awsaf/Desktop/BLockChain/Geth/private/geth/lightchaindata cache=16 handles=16
+INFO [02-23|04:24:31.069] Writing custom genesis block 
+INFO [02-23|04:24:31.086] Persisted trie from memory database      nodes=354 size=51.71kB time=3.075823ms gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [02-23|04:24:31.086] Successfully wrote genesis state         database=lightchaindata                                                  hash=d51396…c81590
+```
+
+Using this command, a chain is created.
+
+## Transactions
+
+We create 3 new accounts.
+
+- Receive minimg awards
+- Perform transactions
+
+Use the command `geth --datadir . account new`
+
+```bash
+INFO [02-23|04:28:14.046] Maximum peer count                       ETH=25 LES=0 total=25
+Your new account is locked with a password. Please give a password. Do not forget this password.
+Passphrase:
+Repeat passphrase:
+Address: {ffab7488dc53756b33770354f68dbefffcb8ecff}
+```
+
+Running the same command will creates more accounts. The account ids will be different each time since they are randomly generated.
+
+- `Address: {ffab7488dc53756b33770354f68dbefffcb8ecff}`
+- `Address: {383e052fdb624d00e536c6f90befeb0a353c716a}`
+- `Address: {ae4e36196f2c5f0f70cdfa5f4a7e432a98131f8a}`
+
+These addresses are also stored in the keystore folder. `geth --datadir .  account list` gives us the list of exsting accounts.
+
+```shell
+Account #0: {ffab7488dc53756b33770354f68dbefffcb8ecff} keystore:///home/awsaf/Desktop/BLockChain/Geth/private/keystore/UTC--2019-02-22T22-28-37.303384115Z--ffab7488dc53756b33770354f68dbefffcb8ecff
+Account #1: {383e052fdb624d00e536c6f90befeb0a353c716a} keystore:///home/awsaf/Desktop/BLockChain/Geth/private/keystore/UTC--2019-02-22T22-32-17.492691158Z--383e052fdb624d00e536c6f90befeb0a353c716a
+Account #2: {ae4e36196f2c5f0f70cdfa5f4a7e432a98131f8a} keystore:///home/awsaf/Desktop/BLockChain/Geth/private/keystore/UTC--2019-02-22T22-33-52.089455393Z--ae4e36196f2c5f0f70cdfa5f4a7e432a98131f8a
+```
