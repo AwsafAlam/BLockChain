@@ -1,0 +1,40 @@
+INFO [02-23|00:06:58.705] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [02-23|00:06:58.707] Starting peer-to-peer node               instance=Geth/v1.8.23-stable-c9427004/linux-amd64/go1.10.4
+INFO [02-23|00:06:58.707] Allocated cache and file handles         database=/home/awsaf/.ethereum/geth/chaindata cache=512 handles=2048
+INFO [02-23|00:06:59.134] Initialised chain configuration          config="{ChainID: 1 Homestead: 1150000 DAO: 1920000 DAOSupport: true EIP150: 2463000 EIP155: 2675000 EIP158: 2675000 Byzantium: 4370000 Constantinople: 7280000  ConstantinopleFix: 7280000 Engine: ethash}"
+INFO [02-23|00:06:59.134] Disk storage enabled for ethash caches   dir=/home/awsaf/.ethereum/geth/ethash count=3
+INFO [02-23|00:06:59.134] Disk storage enabled for ethash DAGs     dir=/home/awsaf/.ethash               count=2
+INFO [02-23|00:06:59.134] Initialising Ethereum protocol           versions="[63 62]" network=1
+INFO [02-23|00:06:59.224] Loaded most recent local header          number=0 hash=d4e567…cb8fa3 td=17179869184 age=49y10mo1w
+INFO [02-23|00:06:59.224] Loaded most recent local full block      number=0 hash=d4e567…cb8fa3 td=17179869184 age=49y10mo1w
+INFO [02-23|00:06:59.224] Loaded most recent local fast block      number=0 hash=d4e567…cb8fa3 td=17179869184 age=49y10mo1w
+INFO [02-23|00:06:59.224] Loaded local transaction journal         transactions=0 dropped=0
+INFO [02-23|00:06:59.225] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [02-23|00:06:59.394] New local node record                    seq=3 id=b04ac1c762c29b3d ip=127.0.0.1 udp=30303 tcp=30303
+INFO [02-23|00:06:59.394] Started P2P networking                   self=enode://b2a01881222d9b2505209e44db0317308b64bf2898f7417f4d86e8898cffda805182496f926dfa98b11d03b527b6982bb14a3d9d2d1b89556f53101af20416b3@127.0.0.1:30303
+INFO [02-23|00:06:59.398] IPC endpoint opened                      url=/home/awsaf/.ethereum/geth.ipc
+INFO [02-23|00:07:01.717] Mapped network port                      proto=tcp extport=30303 intport=30303 interface="UPNP IGDv1-IP1"
+INFO [02-23|00:07:01.776] Mapped network port                      proto=udp extport=30303 intport=30303 interface="UPNP IGDv1-IP1"
+INFO [02-23|00:07:03.398] New local node record                    seq=4 id=b04ac1c762c29b3d ip=45.127.249.10 udp=30303 tcp=30303
+INFO [02-23|00:08:29.395] Block synchronisation started 
+WARN [02-23|00:08:39.172] Node data write error                    err="state node cc7fd2…810778 failed with all peers (2 tries, 2 peers)"
+WARN [02-23|00:08:39.172] Synchronisation failed, retrying         err="state node cc7fd2…810778 failed with all peers (2 tries, 2 peers)"
+WARN [02-23|00:08:46.554] Node data write error                    err="state node cc7fd2…810778 failed with all peers (3 tries, 3 peers)"
+WARN [02-23|00:08:46.558] Synchronisation failed, retrying         err="state node cc7fd2…810778 failed with all peers (3 tries, 3 peers)"
+WARN [02-23|00:08:54.542] Node data write error                    err="state node cc7fd2…810778 failed with all peers (3 tries, 3 peers)"
+WARN [02-23|00:08:54.542] Synchronisation failed, retrying         err="state node cc7fd2…810778 failed with all peers (3 tries, 3 peers)"
+WARN [02-23|00:09:03.853] Node data write error                    err="state node cc7fd2…810778 failed with all peers (3 tries, 3 peers)"
+WARN [02-23|00:09:03.853] Synchronisation failed, retrying         err="state node cc7fd2…810778 failed with all peers (3 tries, 3 peers)"
+WARN [02-23|00:09:13.938] Node data write error                    err="state node cc7fd2…810778 failed with all peers (3 tries, 3 peers)"
+WARN [02-23|00:09:13.938] Synchronisation failed, retrying         err="state node cc7fd2…810778 failed with all peers (3 tries, 3 peers)"
+WARN [02-23|00:09:26.295] Node data write error                    err="state node cc7fd2…810778 failed with all peers (4 tries, 4 peers)"
+INFO [02-23|00:09:26.562] Imported new block headers               count=384 elapsed=1.515s number=384 hash=d3d5d5…c79cf3 age=3y7mo1w
+WARN [02-23|00:09:26.583] Rolled back headers                      count=384 header=384->0 fast=0->0 block=0->0
+WARN [02-23|00:09:26.583] Synchronisation failed, retrying         err="state node cc7fd2…810778 failed with all peers (4 tries, 4 peers)"
+WARN [02-23|00:09:31.127] Synchronisation failed, retrying         err="block header download canceled (requested)"
+INFO [02-23|00:09:37.551] IPC endpoint closed                      url=/home/awsaf/.ethereum/geth.ipc
+INFO [02-23|00:09:37.552] Blockchain manager stopped 
+INFO [02-23|00:09:37.552] Stopping Ethereum protocol 
+INFO [02-23|00:09:37.552] Ethereum protocol stopped 
+INFO [02-23|00:09:37.552] Transaction pool stopped 
+INFO [02-23|00:09:37.553] Database closed                          database=/home/awsaf/.ethereum/geth/chaindata
