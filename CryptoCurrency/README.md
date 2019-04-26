@@ -8,4 +8,4 @@ First run `npm init`
 
 This will install all dependencies.
 
-RUn the `main.js` file from terminal using `node main.js`
+Run the `main.js` file from terminal using `node main.js`
